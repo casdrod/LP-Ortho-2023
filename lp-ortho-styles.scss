@@ -20,6 +20,7 @@ $text: #000000;
            } 
            &:nth-of-type(2){background-color:darken($primary, 10%); }
         }
+        .ra {flex: 2;}
        i{font-size:16px; margin-right: 5px;}
        i, i:before{display:inline-block;margin:0 auto}
     }
@@ -343,6 +344,7 @@ color: #000;
     label{display:none}
     input, textarea{width:93%;display:table;margin:10px auto;background-color:#d3d3d3;color:$text;border-radius:5px;padding:15px;font-size:16px; border:none;box-shadow:inset 0 1px 3px 0 rgba(0,0,0,0.5);
         &:focus{background-color:#e3e3e3}
+        &::placeholder {color:#000}
     }
     textarea{height:200px;margin-bottom:30px}
     textarea:focus, input:focus, button:focus{outline-style:solid;outline-width:thin;outline-color:$secondary}
@@ -420,7 +422,7 @@ color: #000;
     .arrow:hover {left: auto;}
     #next:hover {right: auto;}
     header #right #locate { min-height: 58px }
-    #banner .caption{display:none}
+    #banner .caption{padding: 5px;font-size: 18px;letter-spacing: .7px;}
     .pager {padding-right: 20px;}
     #banner {justify-content: space-between;}
 }
@@ -484,14 +486,14 @@ color: #000;
             .num-button {
                 flex-direction: row; width: 100%;
                 #desktop-ra {display:none;}
-                #mobile-ra {display: flex !important; flex-wrap: wrap;justify-content: center;align-items: center;}    
+                #mobile-ra {display: flex !important; background-color: $primary;flex-wrap: wrap;justify-content: center;align-items: center;}    
             }   
             .btn-alt, address{flex:0 1 50%; }
             .btn-alt{font-size: 16px;color:#000;color:#fff;background-image:none;border:0;border-radius:0;box-shadow:none;text-shadow:none;padding:10px 3px;
                 &:hover{color:#fff;background-color:#3d3d3d;}
                 &:after{display:none}
             }
-            .phone{font-size:18px;color:#fff;background-color: $secondary;border:0;display:flex;flex-flow:column;justify-content:center;font-weight:700;padding:8px 0;flex: 1;font-size: 22px; color: #fff; 
+            .phone{font-size:18px;color:#fff;background-color: $primary;border:0;display:flex;flex-flow:column;justify-content:center;font-weight:700;padding:8px 0;flex: 1;font-size: 22px; color: #fff; 
                 span {color: #fff;}
                 &:hover{background-color:#3d3d3d;color:#fff}}
     

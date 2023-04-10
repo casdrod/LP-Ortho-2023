@@ -361,6 +361,9 @@ footer {
   #fixed-tabs a:nth-of-type(2) {
     background-color: #00504b;
   }
+  #fixed-tabs .ra {
+    flex: 2;
+  }
   #fixed-tabs i {
     font-size: 16px;
     margin-right: 5px;
@@ -1352,6 +1355,12 @@ footer .copy span:not(:first-of-type) {
 #lp-appointment-form input:focus, #lp-appointment-form textarea:focus {
   background-color: #e3e3e3;
 }
+#lp-appointment-form input::-moz-placeholder, #lp-appointment-form textarea::-moz-placeholder {
+  color: #000;
+}
+#lp-appointment-form input::placeholder, #lp-appointment-form textarea::placeholder {
+  color: #000;
+}
 #lp-appointment-form textarea {
   height: 200px;
   margin-bottom: 30px;
@@ -1628,7 +1637,9 @@ footer .copy span:not(:first-of-type) {
     min-height: 58px;
   }
   #banner .caption {
-    display: none;
+    padding: 5px;
+    font-size: 18px;
+    letter-spacing: 0.7px;
   }
   .pager {
     padding-right: 20px;
@@ -1798,6 +1809,7 @@ footer .copy span:not(:first-of-type) {
   }
   header .flex-ed .num-button #mobile-ra {
     display: flex !important;
+    background-color: #00837B;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -1826,7 +1838,7 @@ footer .copy span:not(:first-of-type) {
   header .flex-ed .phone {
     font-size: 18px;
     color: #fff;
-    background-color: #4AC1E0;
+    background-color: #00837B;
     border: 0;
     display: flex;
     flex-flow: column;
